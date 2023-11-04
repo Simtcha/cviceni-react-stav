@@ -3,8 +3,10 @@ import offUrl from './off.svg';
 import onUrl from './on.svg';
 import './zarovka.css';
 
-// Zadání 1: Po kliku na tlačítko `zapnout` zavolejte `setJeZapnuta(true)`.
-// Zadání 2: Po kliku na tlačítko `vypnout` zhasněte.
+/*
+Zadání 1: Po kliku na tlačítko `zapnout` zavolejte `setJeZapnuta(true)`.
+Zadání 2: Po kliku na tlačítko `vypnout` zhasněte.
+*/
 
 export const Uloha1 = () => {
   const [jeZapnuta, setJeZapnuta] = useState(false)

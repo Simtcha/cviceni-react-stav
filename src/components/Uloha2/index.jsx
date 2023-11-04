@@ -1,5 +1,8 @@
-// Zadání 1: Převeďte `cislo` na stavovou proměnnou.
-// Zadání 2: Zařiďte, aby jednotlivá tlačítka měnila stav. +1 přičítalo jedničku, +5 přičítalo pětku, vynulovat nastavovalo na nulu apod.
+/*
+Zadání 1: Převeďte `cislo` na stavovou proměnnou.
+Zadání 2: Zařiďte, aby jednotlivá tlačítka měnila stav. +1 přičítalo jedničku, +5 přičítalo pětku,
+  vynulovat nastavovalo na nulu apod.
+*/
 
 const Pocitadlo = () => {
   const cislo = 0;

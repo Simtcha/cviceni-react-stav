@@ -8,10 +8,12 @@ import "./kostka.css";
 
 const diceUrls = [dice1Url, dice2Url, dice3Url, dice4Url, dice5Url, dice6Url];
 
-// Zadání 1: Převeďte `cisloNaKostce` na stavovou proměnnou.
-// Zadání 2: Po kliku na tlačítko zvětšete číslo na kostce o jedna. Po šetce by měla následovat jednička.
-// Zadání 3: Vypište v textu `<p>`, jaké číslo kostka ukazuje.
-// Zadání 4: Vypište v atributu `alt` správné číslo.
+/*
+Zadání 1: Převeďte `cisloNaKostce` na stavovou proměnnou.
+Zadání 2: Po kliku na tlačítko zvětšete číslo na kostce o jedna. Po šetce by měla následovat jednička.
+Zadání 3: Vypište v textu `<p>`, jaké číslo kostka ukazuje.
+Zadání 4: Vypište v atributu `alt` správné číslo.
+*/
 
 export const Uloha3 = () => {
   const cisloNaKostce = 1; /* jedna až šest */
