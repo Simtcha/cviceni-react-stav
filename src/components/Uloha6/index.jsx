@@ -1,4 +1,3 @@
-import React from 'react'
 import './ukol.css'
 
 // Zadání 1: Pomocí `map` vypiš v seznamu `ul` všechny úkoly pomocí komponenty `Ukol`.

@@ -7,11 +7,13 @@ const Pocitadlo = () => {
   return (
     <>
       <h3>Počítadlo: {cislo}</h3>
-      <button>-5</button>
-      <button>-1</button>
-      <button>vynulovat</button>
-      <button>+1</button>
-      <button>+5</button>
+      <div>
+        <button>-5</button>
+        <button>-1</button>
+        <button>vynulovat</button>
+        <button>+1</button>
+        <button>+5</button>
+      </div>
     </>
   );
 };

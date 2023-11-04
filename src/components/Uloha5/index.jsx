@@ -7,7 +7,7 @@ import './hamburger.css';
 
 export const Uloha5 = () => {
   return (
-    <>
+    <div className='menu'>
       <button className="hamburger" aria-label="menu">
         <span></span>
         <span></span>
@@ -27,6 +27,6 @@ export const Uloha5 = () => {
           <a href="#cenik">Ceník</a>
         </li>
       </ul>
-    </>
+    </div>
   );
 };

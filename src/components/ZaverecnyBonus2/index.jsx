@@ -1,4 +1,3 @@
-import React from 'react'
 import './kasicka.css'
 import penizeUrl from './penize.svg'
 
