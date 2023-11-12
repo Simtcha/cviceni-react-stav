@@ -1,10 +1,12 @@
-import React from 'react'
 import './kasicka.css'
 import penizeUrl from './penize.svg'
 
-// Zadání 1: Přichystej v komponentě `Kasicka` proměnnou pro počet uložených peněz s výchozí hodnotou podle prop proměnné `pocatecniStav`.
-// Zadání 2: Prvním tlačítkem přidej pět a druhým nastav na nulu.
-// Zadání 3: Počet peněz vypiš.
+/*
+Zadání 1: Přichystej v komponentě `Kasicka` proměnnou pro počet uložených peněz s výchozí hodnotou
+  podle prop proměnné `pocatecniStav`.
+Zadání 2: Prvním tlačítkem přidej pět a druhým nastav na nulu.
+Zadání 3: Počet peněz vypiš.
+*/
 
 const Kasicka = ({ pocatecniStav }) => {
   return (

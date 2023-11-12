@@ -1,11 +1,16 @@
 import './carousel.css';
 
-// Zadání 1: Nachystejte si adresy obrázků níže do pole.
-// Zadání 2: Přidejte komponentě stavovou proměnnou, ve které bude index právě aktivního obrázku. Na začátku 0.
-// Zadání 3: Pro `src` v tagu `img` použijte adresu z pole pod správným indexem.
-// Zadání 4: Tlačítky ← a → měňte index.
+/*
+Zadání 1: Nachystejte si adresy obrázků níže do pole.
+Zadání 2: Přidejte komponentě stavovou proměnnou, ve které bude index právě aktivního obrázku.
+  Na začátku 0.
+Zadání 3: Pro `src` v tagu `img` použijte adresu z pole pod správným indexem.
+Zadání 4: Tlačítky ← a → měňte index.
 
-// Bonus: Pozor na krajní hodnoty. Pokud dojdete na konec nebo začátek pole, tak už v daném směru neměňte index, aby neutekl mimo položky v poli. Nastavte tlačítkům atribut `disabled`, pokud v jejich směru už není žádný obrázek.
+Bonus: Pozor na krajní hodnoty. Pokud dojdete na konec nebo začátek pole, tak už v daném směru
+  neměňte index, aby neutekl mimo položky v poli. Nastavte tlačítkům atribut `disabled`, pokud
+  v jejich směru už není žádný obrázek.
+*/
 
 /*
   Adresy obrázků:

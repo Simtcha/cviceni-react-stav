@@ -1,10 +1,11 @@
-import React from 'react'
 import './ukazatel-uspechu.css'
 
-// Zadání 1: Použij prop `barva` ve style atributu.
-// Zadání 2: Přidej komponentě číselný stav od nuly do sta, který bude reprezentovat postup.
-// Zadání 3: Po kliknutí na tlačítko zvětši stav o deset. Nejvýše ale do sta.
-// Zadání 4. Nastav prvku `ukazatel-uspechu__postup` šířku podle stavové proměnné.
+/*
+Zadání 1: Použij prop `barva` ve style atributu.
+Zadání 2: Přidej komponentě číselný stav od nuly do sta, který bude reprezentovat postup.
+Zadání 3: Po kliknutí na tlačítko zvětši stav o deset. Nejvýše ale do sta.
+Zadání 4. Nastav prvku `ukazatel-uspechu__postup` šířku podle stavové proměnné.
+*/
 
 const UkazatelPokroku = ({ barva }) => {
   return (

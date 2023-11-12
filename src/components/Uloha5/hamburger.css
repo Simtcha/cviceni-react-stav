@@ -1,3 +1,7 @@
+.menu {
+  align-self: flex-start;
+}
+
 .hamburger {
   display: block;
   width: 40px;
