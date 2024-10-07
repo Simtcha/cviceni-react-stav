@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './carousel.css';
 
 /*
@@ -14,27 +15,34 @@ Bonus: Pozor na krajní hodnoty. Pokud dojdete na konec nebo začátek pole, tak
 
 /*
   Adresy obrázků:
-  https://source.unsplash.com/WLUHO9A_xik/880x500
-  https://source.unsplash.com/DA1eGglMmlg/880x500
-  https://source.unsplash.com/kTxL6le0Wgk/880x500
-  https://source.unsplash.com/7go5UASxmDY/880x500
-  https://source.unsplash.com/YmATDIFsCmQ/880x500
+    'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
+    'https://images.unsplash.com/photo-1494783367193-149034c05e8f',
+    'https://images.unsplash.com/photo-1521747116042-5a810fda9664',
+    'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'
 */
 
 export const Uloha4 = () => {
+  const [index, setIndex] = useState(0)
+  const pole = [
+    'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
+    'https://images.unsplash.com/photo-1494783367193-149034c05e8f',
+    'https://images.unsplash.com/photo-1521747116042-5a810fda9664',
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e'
+  ]
   return (
     <div className="carousel">
-      <button className="carousel__predchozi" aria-label="předchozí">
+      <button className="carousel__predchozi" aria-label="předchozí" onClick={()=> setIndex(index === 0? 3: index - 1) }>
         ←
       </button>
       <div className="carousel__media">
         <img
           className="carousel__image"
-          src="https://source.unsplash.com/7go5UASxmDY/880x500"
+          src={pole[index]}
           alt=""
         />
       </div>
-      <button className="carousel__dalsi" aria-label="další">
+      <button className="carousel__dalsi" aria-label="další" onClick={()=> setIndex(index ===3? 0: index + 1) }>
         →
       </button>
     </div>

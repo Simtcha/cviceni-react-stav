@@ -1,5 +1,3 @@
-import './hamburger.css';
-
 /*
 Zadání 1: Přichystejte si stavovou proměnnou s výchozí hodnotou `false`, ve které bude uloženo,
   jestli je menu otevřené nebo nikoliv.
@@ -9,15 +7,20 @@ Zadání 4: Pokud je menu zavřené nechte mu jen třídu `hamburger`. Pro otev�
   `hamburger--otevrene`.
 */
 
+import { useState } from 'react';
+import './hamburger.css';
+
 export const Uloha5 = () => {
+  const [myMenu, setMenu] = useState(false)
   return (
     <div className='menu'>
-      <button className="hamburger" aria-label="menu">
+      <button className={myMenu ? 'hamburger--otevrene' : 'hamburger'} aria-label="menu" onClick={()=> setMenu(!myMenu) }>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul>
+      {myMenu ? (
+        <ul>
         <li>
           <a href="#o-nas">O nás</a>
         </li>
@@ -30,7 +33,7 @@ export const Uloha5 = () => {
         <li>
           <a href="#cenik">Ceník</a>
         </li>
-      </ul>
+      </ul>) : null}
     </div>
   );
 };

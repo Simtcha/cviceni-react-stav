@@ -15,8 +15,12 @@ Zadání 3: Vypište v textu `<p>`, jaké číslo kostka ukazuje.
 Zadání 4: Vypište v atributu `alt` správné číslo.
 */
 
+import { useState } from "react";
+
+
 export const Uloha3 = () => {
-  const cisloNaKostce = 1; /* jedna až šest */
+  const [cisloNaKostce, setCisloNaKostce] = useState(1); /* jedna až šest */
+  const diceUrls = [dice1Url,dice2Url,dice3Url,dice4Url,dice5Url,dice6Url]
 
   return (
     <>
@@ -28,7 +32,7 @@ export const Uloha3 = () => {
         className="kostka__ikona"
       />
       <p className="kostka__text">Na kostce je číslo @TODO.</p>
-      <button className="kostka__akce">další</button>
+      <button className="kostka__akce" onClick={()=> setCisloNaKostce(cisloNaKostce ===6? 1: cisloNaKostce+1) }>další</button>
     </>
   );
 };
